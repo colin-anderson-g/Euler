@@ -8,6 +8,11 @@ package main.java;
  * By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
  */
 
+/**
+ * Recursion is not a viable solution in this case because Java doesn't want to make four million recursive calls
+ * Go figure.
+ */
+
 public class Fibonacci_Sum {
 
     public static void main(String[] args) {
