@@ -6,7 +6,7 @@ package main.java;
  * What is the 10 001st prime number?
  */
 
-public class Prime_Series_Find_Given_Term {
+public class Problem_7_Term_In_Prime_Series {
 
     public static void main(String[] args) {
 
