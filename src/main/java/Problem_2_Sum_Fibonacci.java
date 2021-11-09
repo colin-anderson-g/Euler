@@ -13,7 +13,7 @@ package main.java;
  * Go figure.
  */
 
-public class Fibonacci_Sum {
+public class Problem_2_Sum_Fibonacci {
 
     public static void main(String[] args) {
         int sumOfEvens = 0;

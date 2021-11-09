@@ -9,7 +9,7 @@ import java.util.Arrays;
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
 
-public class Largest_Palindrome_Multiple {
+public class Problem_4_Largest_Palindrome_Product {
 
     public static void main(String[] args) {
 

@@ -10,7 +10,7 @@ package main.java;
  * Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
  */
 
-public class Square_Sums {
+public class Problem_6_Squares_And_Sums {
 
     public static void main(String[] args) {
         System.out.println(sumOfSquares(1, 100) - squareOfSum(1, 100));
