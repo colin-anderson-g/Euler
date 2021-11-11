@@ -1,5 +1,7 @@
 package main.java;
 
+import java.math.BigInteger;
+
 /**
  * The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
  * <p>
@@ -10,12 +12,13 @@ public class Problem_10_Sum_Of_Primes {
 
     public static void main(String[] args) {
 
-        System.out.println(sumOfPrimesBelow(primesBelow(2_000_000)));
+        /** 1179908154 is not the correct answer */
+        System.out.println(sumOfPrimesBelow(primesBelow(2000000)));
 
     }
 
     public static boolean[] primesBelow(int n) {
-        boolean[] primes = new boolean[n + 1];
+        boolean[] primes = new boolean[n];
 
         // assume that all numbers are prime within given range
         for (int i = 2; i < n; i++) {
@@ -27,7 +30,7 @@ public class Problem_10_Sum_Of_Primes {
 
             // mark natural multiples of i as non-prime
             if (primes[i]) {
-                for (int j = i; i * j <= n; j++) {
+                for (int j = i; i * j < n; j++) {
                     primes[i * j] = false;
                 }
             }
@@ -36,15 +39,15 @@ public class Problem_10_Sum_Of_Primes {
     }
 
 
-    public static int sumOfPrimesBelow(boolean[] primes) {
-        int sum = 0;
+    public static BigInteger sumOfPrimesBelow(boolean[] primes) {
+        BigInteger sum = BigInteger.ZERO;
 
         for (int num = 0; num < primes.length; num++) {
             if (primes[num]) {
-                sum += num;
+                sum = sum.add(BigInteger.valueOf(num));
             }
         }
-
+        
         return sum;
     }
 
