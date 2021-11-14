@@ -12,8 +12,7 @@ public class Problem_10_Sum_Of_Primes {
 
     public static void main(String[] args) {
 
-        /** 1179908154 is not the correct answer */
-        System.out.println(sumOfPrimesBelow(primesBelow(2000000)));
+        System.out.println(primesBelow(2000000));
 
     }
 
@@ -47,7 +46,7 @@ public class Problem_10_Sum_Of_Primes {
                 sum = sum.add(BigInteger.valueOf(num));
             }
         }
-        
+
         return sum;
     }
 
